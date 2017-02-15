@@ -1,0 +1,39 @@
+<!--javascript code to print all prime number below the given number-->
+<html>
+	<head>
+		<title>prime numbers</title>
+		<script type="text/javascript">
+			var j,p=0;
+			function prime(){
+
+				
+						var n=document.getElementById("op1").value;
+						n=parseInt(n);
+						
+						for(var i=1;i<=n;i++)
+							{	
+								for(var k=2;k<i;k++)
+								{
+									if(i%k==0)
+									{	
+										p=0;
+										break;
+									}
+									p=1;
+								}
+								if(p==1){
+									document.write(i);
+									document.write("<br>");
+								}
+							}
+						}
+	   				
+		</script>
+	</head>
+<body>
+	Enter the no
+		<input type="text" value="" id="op1" /><br>
+		<input type="button" onclick="prime()" value="enter" />
+
+</body>
+</html>

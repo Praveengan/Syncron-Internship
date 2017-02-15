@@ -1,0 +1,23 @@
+<!-- javascript code to preint a welcome message for the entered name-->
+<html>
+		<head>
+				<title>first javascript tut</title>
+
+				<script type="text/javascript" >
+						var n;
+						
+         				function sayHello(){
+         							n=document.getElementById("name").value;
+         							document.write("<h2>");
+	         						document.write("hi "+n +",welcome to Syncron!!!")
+									document.write("</h2>");
+										}
+				</script>
+		</head>
+<body>
+	<h4>enter your name<h4>
+					<input type="text" value="" id="name" /><br>
+	                <input type="button" onclick="sayHello()" value="enter" />
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!-- javascript code to check whether a given no is palindrome and print the reverse of it-->
+
+<html>
+	<head>
+		<title>reverse a given no</title>
+		<script type="text/javascript"> 
+			function reverse(){
+								var i,k,rem,rev,sum=0;
+								i=document.getElementById("op1").value;
+								i=parseInt(i);
+								k=i;
+								while(i>=1)
+								{
+									 rem=i%10;
+									 sum=(sum*10)+rem;
+									 i=parseInt(i/10);
+								}
+								if(k==sum){
+									document.getElementById("sum").innerHTML="<h1>the reverse is "+sum+" and it is palindrome</h1><br>";
+																							
+								}
+								else
+								{
+									document.getElementById("sum").innerHTML="<h1>the reverse is "+sum+" and it is not palindrome</h1><br>";
+								
+								
+								}
+							}
+		</script>
+
+	</head>
+<body>
+	<h3>Enter the no to reverse</h3>
+		<input type="text" value="" id="op1" /><br>
+		<input type="button" onclick="reverse()" value="reverse" />
+		<div id="sum"></div>
+
+</body>
+</html>

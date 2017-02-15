@@ -1,0 +1,69 @@
+<!--javascript code to do some basic arithmetic operation-->
+
+
+<html>
+		<head>
+				<title>Arithmetic operation in Javascript</title>
+				<script type="text/Javascript">
+						function ini(){
+									i=document.getElementById("op1").value;
+									j=document.getElementById("op2").value;
+ 										return;
+									}
+
+						function add(){
+									ini()
+    								result=parseInt(i)+parseInt(j);
+    								document.getElementById("result").innerHTML=result;
+									}
+
+						function sub(){
+									ini()
+										if(i > j){
+   											result=parseInt(i)-parseInt(j);
+   											document.getElementById("result").innerHTML=result;
+   											
+											}
+										else
+											{
+											result=parseInt(j)-parseInt(i);
+											document.getElementById("result").innerHTML="-"+result;
+    										
+											}
+									}
+
+						function mul(){
+									ini()
+    								result=parseInt(i) * parseInt(j);
+    								document.getElementById("result").innerHTML=result;
+   									}
+
+						function div(){
+									ini()
+   									result=parseInt(i) / parseInt(j);
+   									document.getElementById("result").innerHTML=result;
+    								}
+
+						function mod(){
+									ini()
+    								result=parseInt(i) % parseInt(j);
+    								document.getElementById("result").innerHTML=result;
+    								}
+
+				</script>
+				<noscript>
+					javascript is turned off in your system do ON it
+				</noscript> 
+		</head>
+<body>
+	enter the first operand		<input type="text" value="" id="op1" /><br>
+	enter the second operand	<input type="text" value="" id="op2" /><br>
+		<input type="button"  onclick="add()" value="add" />
+		<input type="button"  onclick="sub()" value="sub" />
+		<input type="button"  onclick="mul()" value="mul" />
+		<input type="button"  onclick="div()" value="div" />
+		<input type="button"  onclick="mod()" value="mod" /><br>
+		<div id="result"></div>
+
+</body>
+</html>
